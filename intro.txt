@@ -1,0 +1,15 @@
+when you are recording videos for the youtube 
+
+sometime there is some problem in writting fast at some momonets 
+using this code we can write the code much faster and represent properly 
+
+'''problem 
+the text editor auto add indent
+and in notepad it start from the start  
+solution: ask the user where he wants to write the content
+
+idea of execution ##
+first define the file you want to write from and where [text edittor or note pad]
+then place your cursor there and press enter that mean you are ready to start 
+then enter again and text will start apering on the screen on every enter  
+'''
