@@ -5,4 +5,4 @@
   - A policeman cannot catch a thief who is more than K units away from the policeman.
   - We need to find the maximum number of thieves that can be caught.
   
- ## This is much simple code then [geeksforgeeks site](https://www.geeksforgeeks.org/policemen-catch-thieves/)
+ ## This is much simple and less code then [geeksforgeeks site](https://www.geeksforgeeks.org/policemen-catch-thieves/)
