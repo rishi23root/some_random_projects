@@ -3,7 +3,7 @@ simple python program to get all the saved password in the device ,
 suppose you manage to get the terminal in target user windows PC then just with the hit of one click you can get all the password he ever connect 
 can be use for future exploitation
 
-## usercase
+## use-case
 ```python 
 # give all the wifi names user ever connected
 savedWifiPassword.wifi_names()
