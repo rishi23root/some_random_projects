@@ -12,7 +12,7 @@ const bytesToSize = bytes => {
             return `${(bytes / 1024).toFixed(2)} kb`
         }
         else {
-            return `${(bytes / (1024 * 1024)).toFixed(2)} mb`
+            return `${(bytes / (1048576)).toFixed(2)} mb`
         }
     }
 }
@@ -31,7 +31,11 @@ else {
             if (res['type']) {
 
                 process.stdout.write('\tstart downloading wait for some seconds\r')
-                client.add(torrent, torrent => {
+                client.add(torrent,
+                    {
+                        path:__dirname
+                    }
+                    , torrent => {
                     console.log(`File is start downloading at ${__dirname} with name "${torrent.name}" `)
                     const files = torrent.files;
                     var dirpath = "";
@@ -91,10 +95,14 @@ else {
                     torrent.on('done', _ => {
                         console.log('torrent finished downloading')
                         client.destroy()
+                        process.exit(1)
+
                     })
                     torrent.on('error', _ => {
                         console.log('ERROR in downloading torrent')
                         client.destroy()
+                        process.exit(1)
+
                     })
                 })
 
